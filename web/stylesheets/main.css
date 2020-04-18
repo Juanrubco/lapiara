@@ -1,36 +1,57 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px;
+body {
+    background: #fafbfd;
+    font-family: "Nunito", sans-serif;
 }
-.jumbotron .btn-primary {
-  background: #845ac7;
-  border-color: #845ac7;
+#mainNavbar {
+    background:#998542 ;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
-.jumbotron .btn-primary:hover {
-  background: #7646c1;
+#mainNavbar .nav-link{
+    color: white;
 }
-.jumbotron p {
-  color: #d9ccee;
-  max-width: 75%;
-  margin: 1em auto 2em;
+#mainNavbar .nav-link:hover {
+    color:darkblue;
+
 }
-.jumbotron h1 {
-  font-size: 40px;
+#mainNavbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 100;
 }
-.navbar + .jumbotron {
-  margin-top: -20px;
+
+#headingGroup h2{
+    font-weight: 100;
+    font-size: 3rem;
 }
-.jumbotron .lang-logo {
-  display: block;
-  background: #B01302;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  border: 2px solid white;
+
+@media(max-width:1200px){
+    #headingGroup h2{
+        font-weight: 100;
+        font-size: 3rem;
+    }
 }
-.jumbotron .lang-logo img {
-  max-width: 100%;
+.blurb h2{
+  font-weight: 100;
+  font-size: 3rem;  
+}
+.blurb p{
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content{
+    margin-top: 100px;
+}
+#footer h5{
+    color: white;
+}
+#gcard {
+    background: #85B09A;
+}
+#pcard{
+    background: #FF8DA1;
+}
+#bcard{
+    background: #6CACE4;
 }
