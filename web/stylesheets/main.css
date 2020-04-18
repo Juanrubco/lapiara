@@ -1,25 +1,25 @@
 body {
-    background: black;
+    background: #fafbfd;
     font-family: "Nunito", sans-serif;
 }
-#mainNavbar {
+.mainNavbar {
     background:#998542 ;
     font-size: 1.5rem;
     font-weight: 100;
 }
-#mainNavbar .nav-link{
+.mainNavbar .nav-link{
     color: white;
 }
-#mainNavbar .nav-link:hover {
+.mainNavbar .nav-link:hover {
     color:darkblue;
 
 }
-#mainNavbar .navbar-brand {
+.mainNavbar .navbar-brand {
     font-size: 1.5rem;
     font-weight: 100;
 }
 
-#headingGroup h2{
+.headingGroup h2{
     font-weight: 100;
     font-size: 3rem;
 }
@@ -43,15 +43,15 @@ body {
 .content{
     margin-top: 100px;
 }
-#footer h5{
+.footer h5{
     color: white;
 }
-#gcard {
+.gcard {
     background: #85B09A;
 }
-#pcard{
+.pcard{
     background: #FF8DA1;
 }
-#bcard{
+.bcard{
     background: #6CACE4;
 }
