@@ -1,6 +1,10 @@
 {
-  "name": "Start on Heroku: PHP",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
-  "addons": []
+  "name": "Heroku Tomcat",
+  "description": "Heroku Java Web Application Using Embedded Tomcat",
+  "repository": "https://github.com/heroku/devcenter-embedded-tomcat",
+  "logo": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Tomcat-logo.svg",
+  "keywords": [
+    "java",
+    "tomcat"
+  ]
 }
