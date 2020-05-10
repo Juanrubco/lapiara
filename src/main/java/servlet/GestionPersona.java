@@ -13,7 +13,7 @@ public class GestionPersona extends AbstractDB
 	{
 		super();
 	}
-	public static Persona Login(String user, String pass)
+	public Persona Login(String user, String pass)
 	{
 		String sql="select*from persona where usuario=? and pass=?";
 		ResultSet rst;
