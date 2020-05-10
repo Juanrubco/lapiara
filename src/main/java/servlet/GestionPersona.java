@@ -1,10 +1,10 @@
-package servlet
+package servlet;
 
-import AbstractDB;
+import AbstractDB.;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import Persona;
+import Persona.;
 
 public class GestionPersona extends AbstractDB
 {
@@ -13,7 +13,7 @@ public class GestionPersona extends AbstractDB
 	{
 		super();
 	}
-	public static Persona Login(String user String pass)
+	public static Persona Login(String user, String pass)
 	{
 		String sql="select*from persona where usuario=? and pass=?";
 		ResultSet rst;

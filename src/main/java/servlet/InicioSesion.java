@@ -21,7 +21,7 @@ public class InicioSesion extends HttpServlet
             throws ServletException, IOException 
      {
   
-                 resp.sendRedirect("index.html") 
+                 resp.sendRedirect("index.html");
 
 
 
