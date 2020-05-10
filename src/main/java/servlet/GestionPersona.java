@@ -17,7 +17,7 @@ public class GestionPersona extends AbstractDB
 	{
 		String sql="select*from persona where usuario=? and pass=?";
 		ResultSet rst;
-		Usuario usuario=null;
+		Persona usuario=null;
 		try
 		{
 			Connection conn = ConexionDB.getConn();
@@ -28,7 +28,7 @@ public class GestionPersona extends AbstractDB
 
 			while(rst.next())
 			{
-				usuario=new Usuario();
+				usuario=new Persona();
 				usuario.setID(rst.getString("idpersona"));
 				usuario.setNombre(rst.getString("nombre"));
 				usuario.setApellido(rst.getString("apellido"));
