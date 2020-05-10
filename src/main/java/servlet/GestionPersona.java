@@ -1,10 +1,10 @@
 package servlet;
 
-import AbstractDB.;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import Persona.;
+
 
 public class GestionPersona extends AbstractDB
 {
