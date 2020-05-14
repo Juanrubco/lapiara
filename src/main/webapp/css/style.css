@@ -47,7 +47,7 @@ body {
 }
 
 p {
-  color: #7e8690;
+  color: #f8f6f3;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
@@ -89,6 +89,9 @@ h6, .h6 {
 .text-sm {
   font-size: 14px;
 }
+.mt-3{
+  text-align: center;
+}
 
 .btn {
   display: inline-block;
@@ -129,8 +132,8 @@ h6, .h6 {
 }
 
 .btn-white:hover {
-  border-color: #998542;
-  background: #998542;
+  border-color: #e01818;
+  background: #dd1d1d;
   color: #fff;
 }
 
@@ -152,6 +155,63 @@ h6, .h6 {
   color: #111;
 }
 
+.btn-main-1 {
+  background: #7cb342;
+  color: #fff;
+}
+.btn-main-1:hover{
+  color: #000;
+}
+.post-cat-1:hover{
+  color: #7cb342;
+}
+.post-cat-1{
+  background: #eee;
+  display: inline-block;
+  padding: 3px 10px;
+  text-transform: capitalize;
+}
+.mb-3-1:hover{
+  color: #7cb342;
+}
+.btn-main-2 {
+  background: #FF1493;
+  color:#fff
+}
+.btn-main-2:hover{
+color: black;
+}
+.post-cat-2:hover{
+color: #FF1493;
+}
+.post-cat-2{
+  background: #eee;
+  display: inline-block;
+  padding: 3px 10px;
+  text-transform: capitalize; 
+}
+.mb-3-2:hover{
+  color: #FF1493;
+}
+.btn-main-3 {
+  background: #03a9f4;
+  color:#fff
+}
+.btn-main-3:hover{
+color: black;
+}
+.post-cat-3:hover{
+color:#03a9f4;
+}
+.post-cat-3{
+  background: #eee;
+  display: inline-block;
+  padding: 3px 10px;
+  text-transform: capitalize; 
+}
+.mb-3-3:hover{
+  color:#03a9f4;
+}
 .btn-solid-border:hover {
   border-color: #111;
   background: #111;
@@ -207,7 +267,15 @@ h6, .h6 {
 .text-primary {
   color: #998542 !important;
 }
-
+.text-primary-1:hover{
+  color:#7cb342; 
+}
+.text-primary-2:hover{
+  color:#FF1493; 
+}
+.text-primary-3:hover{
+  color:#03a9f4; 
+}
 .font-extra {
   font-family: "Cookie", cursive;
 }
@@ -232,6 +300,8 @@ a {
   transition: all .35s ease;
 }
 
+
+
 a:hover {
   color: #998542;
 }
@@ -244,12 +314,15 @@ a:hover {
   background: #f8f6f3;
 }
 
+
+
+
 a:hover {
   text-decoration: none;
 }
 
-.text-white-70 {
-  color: rgba(255, 255, 255, 0.7);
+.text-white {
+  color: rgba(45, 9, 247, 0.7);
 }
 
 .slide-bg-image {
@@ -374,7 +447,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 35%;
-  background: #998542;
+  background: #FF1493;
   -webkit-transform: scale3d(1, 0, 1);
           transform: scale3d(1, 0, 1);
   -webkit-transform-origin: 50% 100%;
@@ -403,7 +476,7 @@ ul.dropdown-menu {
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
-  border-top: 2px solid #998542;
+  border-top: 2px solid#FF1493;
 }
 
 ul.dropdown-menu > li > a,
@@ -423,7 +496,7 @@ ul.dropdown-menu > li > a,
 
 ul.dropdown-menu > li > a:hover,
 .navbar ul ul ul.dropdown-menu li .nav-link:hover {
-  background: #998542;
+  background:#FF1493;
   color: #fff;
 }
 
@@ -552,11 +625,21 @@ ul.dropdown-menu > li > a:hover,
   }
 }
 
-.intro-item {
+
+.intro-item-1 {
   padding: 60px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  background: #59698d;
+  color: #fff;
 }
-
+.intro-item-2 {
+  padding: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  text-align: center;
+  background: #1c2a48;
+  color:#fff;
+}
 .intro-item i {
   font-size: 62px;
 }
@@ -581,7 +664,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .section-header {
-  background: url("../images/bg/bg-2.jpg") 50% 50% no-repeat;
+  background: url("../images/bg/op4.png") 50% 50% no-repeat;
   background-size: cover;
   padding: calc(70px + 9rem) 0 9rem;
   position: relative;
@@ -760,7 +843,7 @@ ul.dropdown-menu > li > a:hover,
 }
 
 .menu .btn.active {
-  color: #998542;
+  color: #0aee28;
 }
 
 .menu .btn-group .btn {
@@ -777,7 +860,7 @@ ul.dropdown-menu > li > a:hover,
   content: "";
   left: 0px;
   top: 0px;
-
+  background: url("../images/bg/food.png") right bottom;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -793,13 +876,27 @@ ul.dropdown-menu > li > a:hover,
   padding: 15px;
   border: 1px dashed rgba(0, 0, 0, 0.3);
 }
-
+.mb-3-4{
+  color:#7cb342;
+}
 .menu-item img {
   margin-right: 20px;
   min-width: 150px;
   box-shadow: 0px 4px 8px 0px rgba(111, 102, 88, 0.15);
 }
 
+.fb:hover{
+  color: #0d47a1;
+}
+.wa:hover{
+  color: #4caf50;
+}
+.ig:hover{
+  color:#ff1744 ;
+}
+.mail:hover{
+  color:#00b0ff;
+}
 .menu-item h4 {
   font-size: 20px;
   margin-bottom: 0px;
@@ -809,7 +906,15 @@ ul.dropdown-menu > li > a:hover,
   font-weight: 600;
   color: #998542;
 }
-
+.mt-2-1:hover{
+  color:#7cb342;
+}
+.mt-2-2:hover{
+  color:#FF1493;
+}
+.mt-2-3:hover{
+  color:#03a9f4;
+}
 .text-sm {
   font-size: 14px;
 }
