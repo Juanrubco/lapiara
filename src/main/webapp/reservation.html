@@ -178,6 +178,9 @@ var map;
 	map: map,
 title: 'Bohemia Bistró'
   });
+	 infowindow = new google.maps.InfoWindow({content:'<strong>Bohemia Bistró</strong> Dirección <br><br> Bogotá<br>'});
+	 google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker1);});
+	 infowindow.open(map,marker1);
   var marker2 = new google.maps.Marker({
   	position: {lat:4.9138598,lng:-74.024064},
   	map:map,
