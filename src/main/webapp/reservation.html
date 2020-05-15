@@ -3,13 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>CafeDine - Restuarant template</title>
+  <title>La Piara Ancestral</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <!-- ** Plugins Needed for the Project ** -->
+  <!-- * Plugins Needed for the Project * -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="plugins/themify/css/themify-icons.css">
@@ -28,8 +28,8 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="images\Logos\logo02.png" type="image/x-icon">
-  <link rel="icon" href="images\Logos\logo02.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/Logos/Logo02.png" type="image/x-icon">
+  <link rel="icon" href="images/Logos/Logo02.png" type="image/x-icon">
 
 </head>
 
@@ -60,7 +60,7 @@
 						<ul class="dropdown-menu">
 							<li><a class="dropdown-item" href="menu.html">Productos</a></li>
 							<li><a class="dropdown-item" href="blog.html">Recetas</a></li>
-							<li><a class="dropdown-item" href="confirmation.html">Nuevos lanzamientos</a></li>
+							<li><a class="dropdown-item" href="blog-single.html">Nuevos lanzamientos</a></li>
 						</ul>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="cart.html">Pedidos</a></li>
@@ -73,13 +73,16 @@
 	</nav>
 </header>
 
+
 <!-- Header Close -->
+
+
 <section class="section-header bg-1">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
         <div class="text-center">
-          <h1 class="text-capitalize mb-4 font-lg text-white">Reservation</h1>
+          <h1 class="text-capitalize mb-4 font-lg text-white">Encuéntranos</h1>
         </div>
       </div>
     </div>
@@ -87,31 +90,10 @@
 </section>
 
 
+	<div id="map" class="map"></div>
 
 
-  <section style="padding: 100px 0;">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 mx-auto">
-				<div class="text-center p-5 shadow rounded">
-					<h2 class="mb-3">You have downloaded free version of CafeDine.</h2>
-					<h4 class="mb-3">To get full access of this page please purchase the premium version</h4>
-					<h4>Why Premium?</h4>
-					<ul class="list-unstyled mb-4">
-						<li>Full Template Pack</li>
-						<li>Priority Support</li>
-						<li>Documentation Included</li>
-						<li>Monthly Update</li>
-						<li>Lifetime Download</li>
-						<li>Personal and commercial Use</li>
-						<li>One time payment</li>
-					</ul>
-					<a href="https://themefisher.com/products/veggie-one-page-responsive-html5-restaurant-website-templates/" target="_blank" class="btn btn-main">Buy Premium Version</a>			
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+
 
 
 <!--Footer start -->
@@ -165,18 +147,6 @@
 	</div>
 </section>
 <!-- Footer  End -->
-<section class="footer-btm py-3">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-					<p class="mb-0 ">Copyright &copy; 2020 desarrollado por Blue Rice</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Footer  End -->
 
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
@@ -192,9 +162,31 @@
 <script src="plugins/instafeed/instafeed.min.js"></script>
 <script src="plugins/bootstrap-touchpin/jquery.bootstrap-touchspin.min.js"></script>
 
- <!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script> 
-<script src="plugins/google-map/gmap.js"></script>
+ <!--Google Map-->
+ 
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJehaHPgJEodiu36B91s5UGaDxDFZIpRY&callback=initMap" async defer></script>
+<script type="text/javascript">
+  
+var map;
+ function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 4.7827153, lng: -74.0426112},
+	zoom: 10,
+  });
+  var marker1 = new google.maps.Marker({
+	position: {lat: 43.542194, lng: -5.676875},
+	map: map,
+title: 'Acuario de Gijón'
+  });
+  var marker2 = new google.maps.Marker({
+  	position: {lat:4.9138598,lng:-74.024064},
+  	map:map,
+  	title:'IKI COFFE & BAKERY'
+  });
+}
+
+
+</script>
 <!-- Main Script -->
 <script src="js/contact.js"></script>
 <script src="js/script.js"></script>
