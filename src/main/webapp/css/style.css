@@ -1202,5 +1202,17 @@ textarea.form-control {
 .footer-socials li a:hover {
   color: #998542;
 }
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.red{
+  color: #e01818;
+}
+.blue{
+  color: #ef6c00;
+}
 
 /*# sourceMappingURL=maps/style.css.map */
