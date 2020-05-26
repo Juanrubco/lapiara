@@ -1209,26 +1209,30 @@ textarea.form-control {
   position:relative;
   height:0;
 }
+
 .red{
   color: #e01818;
 }
 .blue{
   color: #ef6c00;
 }
-.top1{
 
+.top1{
   height:390px;
   width: 450px;
 }
+
 .top2{
-  
   text-shadow:-2px -2px 2px #9e9e9e;
 }
+
 .top2-1{
   color: #998542;
   font-family:"Cardo", serif;
   }
-  .top2-2{
+
+.top2-2{
     text-decoration: bold;
   }
+
 /*# sourceMappingURL=maps/style.css.map */
