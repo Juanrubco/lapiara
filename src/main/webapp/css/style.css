@@ -1250,6 +1250,12 @@ textarea.form-control {
   cursor: pointer; /* displays a hand */
   border-color: #998542;
 }
+.card-1{
+ background: #eeeeee ;
+ color: #000000;
+ width: 45rem;
+font-family: "Cardo", serif;
 
+}
 
 /*# sourceMappingURL=maps/style.css.map */
