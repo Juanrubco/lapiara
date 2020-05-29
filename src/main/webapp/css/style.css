@@ -239,24 +239,6 @@ color:#03a9f4;
   padding: 120px 0px;
 }
 
-/* preloader */
-.preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-  z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.preloader img {
-  max-width: 150px;
-}
-
 .text-black {
   color: #111;
 }
