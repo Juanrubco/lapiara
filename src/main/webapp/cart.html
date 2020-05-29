@@ -37,37 +37,37 @@
             let baseDeDatos = [
                 {
                     id: 1,
-                    nombre: 'Chorizo de Cerdo: 500g x 7u',
+                    nombre: 'Chorizo de Cerdo 500g x 7 unidades',
                     precio: 14500,
                     imagen: 'images/Productos/14.jpg'
                 },
 		{
 		    id:2,
-	            nombre:  'Chorizo de Cerdo tipo coctel:300g x 10u',
+	            nombre:  'Chorizo de Cerdo tipo coctel 300g x 10 unidades',
 	            precio: 11500,    
-		    imagen:'images/Productos/14.jpg'    
+		    	imagen:'images/Productos/14.jpg'    
 		}, 
 		{
 		    id:3,
-	            nombre:  'Chorizo de Cerdo Premium:500g x 5u',
+	            nombre:  'Chorizo de Cerdo Premium 500g x 5 unidades',
 	            precio: 14500,    
 		    imagen:'images/Productos/14.jpg'    
 		},     
                 {
                     id: 4,
-                    nombre: 'Morcilla: 500g x 6u',
+                    nombre: 'Morcilla 500g x 6 unidades',
                     precio: 12000,
                     imagen: 'images/Productos/15.jpg'
                 },
                 {
                     id: 5,
-                    nombre: 'Morcilla tipo coctel: 300g x 10u ',
+                    nombre: 'Morcilla tipo coctel 300g x 10 unidades ',
                     precio: 9000,
                     imagen: 'images/Productos/15.jpg'
                 },
 		{
                     id: 6,
-                    nombre: 'Longaniza premium x 500g x 7u ',
+                    nombre: 'Longaniza premium 500g x 7 unidades ',
                     precio: 14500,
                     imagen: 'images/Productos/13.jpg'
                 },
@@ -90,7 +90,7 @@
                     miNodoCardBody.classList.add('card-body');
                     // Titulo
                     let miNodoTitle = document.createElement('h5');
-                    miNodoTitle.classList.add('card-title');
+                    miNodoTitle.classList.add('card-title-1');
                     miNodoTitle.textContent = info['nombre'];
                     // Imagen
                     let miNodoImagen = document.createElement('img');
@@ -99,11 +99,11 @@
                     // Precio
                     let miNodoPrecio = document.createElement('p');
                     //miNodoPrecio.classList.add('card-text');
-			miNodoPrecio.setAttribute('style','color:#FF0000');
+			miNodoPrecio.setAttribute('style','color:#FF1493');
                     miNodoPrecio.textContent = info['precio'] + '$';
                     // Boton 
                     let miNodoBoton = document.createElement('button');
-                    miNodoBoton.classList.add('btn', 'btn-primary');
+                    miNodoBoton.classList.add('btn-1', 'btn-primary');
                     miNodoBoton.textContent = '+';
                     miNodoBoton.setAttribute('marcador', info['id']);
                     miNodoBoton.addEventListener('click', anyadirCarrito);
@@ -255,110 +255,7 @@
 	  </div>
 	</div>
   </section>
-  
-<!--	<div class="container">
-	  <div class="row justify-content-end">
-		<div class="col-lg-12">
-		  <div class="table-responsive">
-			<table class="table text-center table-cart">
-			  <thead>
-				<tr>
-				  <th scope="col" colspan="2">Nombre del producto</th>
-				  <th scope="col">Precio</th>
-				  <th scope="col">Cantidad</th>
-				  <th scope="col">Subtotal</th>
-				  <th scope="col"></th>
-				</tr>
-			  </thead>
-			  <tbody>
-				<tr>
-				  <th scope="row" class="text-left">
-					<img src="images/Productos/14.jpg" alt="" class="img-fluid w-25 mr-3">
-					Chorizo de Cerdo
-				  </th>
-				  <td> </td>
-				  <td>$10000</td>
-				  <td><input class="quantity" type="text" value="1" name="quantity" id="cantidad1"></td>
-				   <td id="Cerdo">0$</td>
-
-				 
-				 
-				  <td class="text-right"><i class="ti-close close"></i></td>
-				</tr>
-				<tr>
-				  <th scope="row" class="text-left"> <img src="images/Productos/15.jpg" alt=""
-					  class="img-fluid w-25 mr-3">Morcilla</th>
-				  <td> </td>
-				  <td>$15000</td>
-				   <td><input class="quantity" type="text" value="1" name="quantity"></td> 
-				  <td>$0</td>
-				  <td class="text-right"><i class="ti-close close"></i></td>
-				</tr>
-				<tr>
-				  <th scope="row" class="text-left"><img src="images/Productos/13.jpg" alt=""
-					  class="img-fluid w-25 mr-3">Longaniza</th>
-				  <td> </td>
-				  <td>$20000</td>
-				  <td><input class="quantity" type="text" value="1" name="quantity"></td>
-				  <td>$0</td>
-				  <td class="text-right"><i class="ti-close close"></i></td>
-				</tr>
-				<tr class="border-bottom">
-				  <td colspan="2">
-				  </td>
-				  <td></td>
-				  <td></td>
-				  <td></td>
-				  <td><a href="#" class="btn btn-main-border pull-right">
-					  Actualizar Carrito
-					</a>
-				  </td>
-				</tr>
-			  </tbody>
-			</table>
-		  </div>
-		</div>
-  
-		<div class="col-md-6 col-lg-6 mt-4">
-		  <div class="px-xl-5 py-4 card border-0 ">
-			<div class="">
-			  <h4 class="text-dark font-size-20">Resumen del pedido</h4>
-			  <hr>
-			  </div>
-  
-			<div class="media align-items-center border-bottom font-weight-medium py-3">
-			  <div class="media-body">
-				<span class="text-black">Chorizo de Cerdo</span>
-			  </div>
-			  <span class="text-dark">0</span>
-			</div>
-  
-			<div class="media align-items-center border-bottom font-weight-medium py-3">
-			  <div class="media-body">
-				<span class="text-black">Morcilla</span>
-			  </div>
-			  <span class="text-dark"></span>0</span>
-			</div>
-  
-			<div class="media align-items-center border-bottom font-weight-medium py-3">
-			  <div class="media-body">
-				<span class="text-black">Longaniza</span>
-			  </div>
-			  <span class="text-dark">0</span>
-			</div>
-  
-			<div class="media justify-content-between align-items-center py-3">
-			  <span class="text-dark ">Total</span>
-			  <span class="text-dark font-weight-bold">COP $0</span>
-			</div>
-  
-			<a href="shipping.html" class="btn btn-main mt-4">
-			  Realizar Pedido 
-			</a>
-		  </div>
-		</div>
-	  </div>
-	</div>-->
+<br> <br>
 	<div class="container">
     <div class="row justify-content-end">
         <!-- Elementos generados a partir del JSON -->
@@ -370,8 +267,8 @@
             <ul id="carrito" class="list-group"></ul>
             <hr>
             <!-- Precio total -->
-            <p class="text-right">Total: <span id="total"></span>$</p>
-               <a href="shipping.html" style="background: :#998542; ">
+            <p class="text-right text-dark">Total: <span id="total"></span>$</p>
+               <a href="shipping.html" style="color: #7cb342">
 			  Realizar Pedido 
 
         </aside>
@@ -380,9 +277,7 @@
 
 </div>
 
-  </section>
-
-
+<br> <br>
 
 
 <!--Footer start -->
