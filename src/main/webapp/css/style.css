@@ -1287,4 +1287,39 @@ font-family: "Cardo", serif;
 color: #998542;
 font-size: 4rem;
 }
+.top1{
+
+  height:390px;
+  width: 450px;
+}
+.top2{ 
+  text-shadow:-2px -2px 2px #9e9e9e;
+}
+.top2-1{
+  color: #998542;
+  font-family:"Cardo", serif;
+  }
+  .top2-2{
+    text-decoration: bold;
+  }
+
+  .table-fit {
+    width: 340px;
+    text-align: center;
+    
+  }
+  .tr-1{
+    background:#7cb342 ;
+  }
+
+.tr-2{
+  background: #FF1493;
+}
+.tr-3{
+    background: #03a9f4;
+ }
+.p-1{
+  font-family: "Cardo", serif;;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
