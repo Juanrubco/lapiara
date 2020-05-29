@@ -1258,4 +1258,51 @@ font-family: "Cardo", serif;
 
 }
 
+.btn-1 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: all .35s ease;
+  background: #000000;
+}
+.top2-2-2{
+  font-family: "Cardo", serif;
+  text-shadow:-2px -2px 2px #9e9e9e;
+}
+
+.mt-5{
+  font-size: x-large;
+  font-family: "Cardo", serif;
+}
+.top1-1{
+  width: 450px;
+  height:350px;
+}
+.ti1{
+  color: #4caf50;
+}
+.ti2{
+  color:#FF1493;
+}
+.ti3{
+  color: #03a9f4;
+}
+.top5{
+  text-shadow: -2px -2px 2px #dcedc8;
+}
+.top4{
+  text-shadow:-2px -2px 2px #f8bbd0; 
+}
+.top6{
+  text-shadow:-2px -2px 2px #bbdefb; 
+}
+.pa1{
+color: #998542;
+font-size: 4rem;
+}
 /*# sourceMappingURL=maps/style.css.map */
